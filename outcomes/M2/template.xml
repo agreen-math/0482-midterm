@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Determine the number and type of solutions for the following equation:
+        </p>
+        <p>
+            <m>{{equation}}</m>
+        </p>
+    </content>
+    <outtro>
+        <p>SOLUTION</p>
+        <p>
+            <m>{{a}}x^2 + ({{b_eff}})x + {{c}} = 0</m>
+        </p>
+        <p>
+            <m>\Delta = ({{b_eff}})^2 - 4({{a}})({{c}})</m>
+        </p>
+        <p>
+            <m>\Delta = {{disc}}</m>
+        </p>
+        <p>
+            <m>\boxed{\text{ {{num}} solutions, {{type}} }}</m>
+        </p>
+    </outtro>
+</knowl>
