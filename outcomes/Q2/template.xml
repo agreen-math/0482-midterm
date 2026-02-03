@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Simplify the radical expression completely:
+        </p>
+        <p>
+            <m>{{A}} \sqrt[{{index}}]{ {{radicand}} }</m>
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>SOLUTION</p>
+        
+        <p>
+            <m>{{A}} \sqrt[{{index}}]{ {{radicand}} }</m>
+        </p>
+        <p>
+            <m>= {{A}} \cdot \sqrt[{{index}}]{ -{{perfect_part}} \cdot {{leftover}} }</m>
+        </p>
+        <p>
+            <m>= {{A}} \cdot ({{extracted}}) \sqrt[{{index}}]{ {{leftover}} }</m>
+        </p>
+        <p>
+            <m>= \boxed{ {{coeff_final}} \sqrt[{{index}}]{ {{leftover}} } }</m>
+        </p>
+    </outtro>
+</knowl>

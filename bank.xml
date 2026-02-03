@@ -1,104 +1,56 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-    <title>New CheckIt Bank</title>
-    <slug>new-checkit-bank</slug>
-    <url>https://checkit.clontz.org</url>
+    <title>0482 Midterm</title>
+    <slug>0482-midterm</slug>
+    <url>idk yet</url>
     <outcomes>
         <outcome>
-            <title>Midterm #1</title>
-            <slug>M1</slug>
-            <path>outcomes/M1</path>
-            <description>
-Evaluate a quadratic function.
-            </description>
+            <title>Simplify Abs Val #1</title>
+            <slug>Q1</slug>
+            <path>outcomes/Q1</path>
+            <description>Simplify arithmetic expressions with absolute value and exponents.</description>
         </outcome>
         <outcome>
-            <title>Midterm #2</title>
-            <slug>M2</slug>
-            <path>outcomes/M2</path>
-            <description>
-Find the discriminant.
-            </description>
+            <title>Simplify Rad #2</title>
+            <slug>Q2</slug>
+            <path>outcomes/Q2</path>
+            <description>Simplify odd roots of negative numbers.</description>
         </outcome>
         <outcome>
-            <title>Midterm #3</title>
-            <slug>M3</slug>
-            <path>outcomes/M3</path>
-            <description>
-Solve a quadratic equation with complex solutions.
-            </description>
+            <title>Simplify Exp #3</title>
+            <slug>Q3</slug>
+            <path>outcomes/Q3</path>
+            <description>Simplify rational expressions with negative and zero exponents.</description>
         </outcome>
         <outcome>
-            <title>Midterm #4</title>
-            <slug>M4</slug>
-            <path>outcomes/M4</path>
-            <description>
-Solve a radical equation with no extraneous solutions.
-            </description>
+            <title>Subtract Poly #4</title>
+            <slug>Q4</slug>
+            <path>outcomes/Q4</path>
+            <description>Subtract quadratic polynomials.</description>
         </outcome>
         <outcome>
-            <title>Midterm #5</title>
-            <slug>M5</slug>
-            <path>outcomes/M5</path>
-            <description>
-Solve a rational equation with one extraneous solution.
-            </description>
+            <title>Mult Poly #5</title>
+            <slug>Q5</slug>
+            <path>outcomes/Q5</path>
+            <description>Multiply a binomial by a trinomial (Difference of Cubes).</description>
         </outcome>
         <outcome>
-            <title>Midterm #6</title>
-            <slug>M6</slug>
-            <path>outcomes/M6</path>
-            <description>
-Find the inverse of a cube root function.
-            </description>
+            <title>Poly Long Div #6</title>
+            <slug>Q6</slug>
+            <path>outcomes/Q6</path>
+            <description>Perform polynomial long division with a remainder.</description>
         </outcome>
         <outcome>
-            <title>Midterm #7</title>
-            <slug>M7</slug>
-            <path>outcomes/M7</path>
-            <description>
-ASSESSMENT QUESTION :Find the vertex of a quadratic function (projectile motion application).
-            </description>
+            <title>Solve Lin Eq #7</title>
+            <slug>Q7</slug>
+            <path>outcomes/Q7</path>
+            <description>Solve multi-step linear equations involving distribution.</description>
         </outcome>
         <outcome>
-            <title>Midterm #8</title>
-            <slug>M8</slug>
-            <path>outcomes/M8</path>
-            <description>
-Function Composition
-            </description>
-        </outcome>
-        <outcome>
-            <title>Midterm #9</title>
-            <slug>M9</slug>
-            <path>outcomes/M9</path>
-            <description>
-Difference Quotient
-            </description>
-        </outcome>
-        <outcome>
-            <title>Midterm #10</title>
-            <slug>M10</slug>
-            <path>outcomes/M10</path>
-            <description>
-Properties of Quadratic Functions
-            </description>
-        </outcome>
-        <outcome>
-            <title>Midterm #11</title>
-            <slug>M11</slug>
-            <path>outcomes/M11</path>
-            <description>
-Sketching Quadratic Functions
-            </description>
-        </outcome>
-        <outcome>
-            <title>Midterm #12</title>
-            <slug>M12</slug>
-            <path>outcomes/M12</path>
-            <description>
-Transformations of Functions
-            </description>
+            <title>Solve Lin Eq w Frac #8</title>
+            <slug>Q8</slug>
+            <path>outcomes/Q8</path>
+            <description>Solve linear equations involving fractions by clearing denominators.</description>
         </outcome>
     </outcomes>
 </bank>

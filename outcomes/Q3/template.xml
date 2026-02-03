@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Simplify: <m>\displaystyle \left( \frac{ {{prob_num}} }{ {{prob_den}} } \right)^{ {{exp_out}} }</m>
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>SOLUTION</p>
+        <p>
+            <m>\displaystyle \left( \frac{ {{prob_num}} }{ {{prob_den}} } \right)^{ {{exp_out}} }</m>
+        </p>
+        <p>
+            <m>= {{step1}}</m>
+        </p>
+        <p>
+            <m>= {{step2}}</m>
+        </p>
+        <p>
+            <m>= \boxed{ {{final_res}} }</m>
+        </p>
+    </outtro>
+</knowl>
