@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Solve for <m>{{target}}</m>: <m>{{eqn}}</m>
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>SOLUTION</p>
+        <p>
+            <m>{{eqn}}</m>
+        </p>
+        <p>
+            <m>{{step1}}</m>
+        </p>
+        <p>
+            <m>\boxed{ {{final}} }</m>
+        </p>
+    </outtro>
+</knowl>

@@ -52,5 +52,23 @@
             <path>outcomes/Q8</path>
             <description>Solve linear equations involving fractions by clearing denominators.</description>
         </outcome>
+        <outcome>
+            <title>Literal Eq #9</title>
+            <slug>Q9</slug>
+            <path>outcomes/Q9</path>
+            <description>Solve a literal equation for a specified variable.</description>
+        </outcome>
+        <outcome>
+            <title>Linear App #10</title>
+            <slug>Q10</slug>
+            <path>outcomes/Q10</path>
+            <description>Solve a word problem involving a linear rate (fixed cost + variable cost).</description>
+        </outcome>
+        <outcome>
+            <title>Graph Line #11</title>
+            <slug>Q11</slug>
+            <path>outcomes/Q11</path>
+            <description>Graph a linear function and identify intercepts.</description>
+        </outcome>
     </outcomes>
 </bank>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            A {{vehicle}} costs $<m>{{base_str}}</m> per day plus $<m>{{rate_str}}</m> per mile driven. If {{person}} has $<m>{{total_str}}</m> for a one-day rental, how many miles can they drive?
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>SOLUTION</p>
+        <p>
+            <m>{{step1}}</m>
+        </p>
+        <p>
+            <m>{{step2}}</m>
+        </p>
+        <p>
+            <m>\boxed{ {{final}} }</m>
+        </p>
+    </outtro>
+</knowl>

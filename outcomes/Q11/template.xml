@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Graph and identify the slope and intercepts of the function:
+            <m>f(x) = {{eqn}}</m>
+        </p>
+        <p>
+            {{grid_tikz}}
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>SOLUTION</p>
+        <p>
+            <m>\text{Slope: } m = {{slope}}</m>
+        </p>
+        <p>
+            <m>\text{y-intercept: } (0, {{y_int}})</m>
+        </p>
+        <p>
+            <m>\text{x-intercept: } ({{x_int}}, 0)</m>
+        </p>
+        <p>
+            {{solution_tikz}}
+        </p>
+    </outtro>
+</knowl>
