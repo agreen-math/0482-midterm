@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            For each graph below, determine whether it represents a function and identify the domain and range.
+        </p>
+    </intro>
+    
+    <knowl>
+        <content>
+            <p>
+                {{tikz_A}}
+            </p>
+        </content>
+        <outtro>
+            <p>Solution</p>
+                <list>
+                    <item><p>Domain: <m>{{dom_A}}</m></p></item>
+                    <item><p>Range: <m>{{rng_A}}</m></p></item>
+                    <item><p>{{is_func_A}}</p></item>
+                </list>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                {{tikz_B}}
+            </p>
+        </content>
+        <outtro>
+            <p>Solution</p>
+            <list>
+                <item><p>Domain: <m>{{dom_B}}</m></p></item>
+                <item><p>Range: <m>{{rng_B}}</m></p></item>
+                <item><p>{{is_func_B}}</p></item>
+            </list>
+        </outtro>
+    </knowl>
+</knowl>

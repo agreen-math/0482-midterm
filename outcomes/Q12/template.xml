@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Given <m>g(x) = x^2 - {{B}}x + {{C}}</m>, find each of the following.
+        </p>
+    </intro>
+    
+    <knowl>
+        <content>
+            <p>
+                <m>g(-1)</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>g(-1) = {{val_a_step1}}</m>
+            </p>
+            <p>
+                <m>= {{val_a_step2}}</m>
+            </p>
+            <p>
+                <m>= \boxed{ {{ans_a}} }</m>
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                <m>g(0)</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>g(0) = {{val_b_step1}}</m>
+            </p>
+            <p>
+                <m>= \boxed{ {{ans_b}} }</m>
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                <m>g(x+h)</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>g(x+h) = {{val_c_step1}}</m>
+            </p>
+            <p>
+                <m>= \boxed{ {{ans_c}} }</m>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

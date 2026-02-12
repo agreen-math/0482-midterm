@@ -5,70 +5,82 @@
     <url>idk yet</url>
     <outcomes>
         <outcome>
-            <title>Simplify Abs Val #1</title>
+            <title>Simplify Abs Val</title>
             <slug>Q1</slug>
             <path>outcomes/Q1</path>
             <description>Simplify arithmetic expressions with absolute value and exponents.</description>
         </outcome>
         <outcome>
-            <title>Simplify Rad #2</title>
+            <title>Simplify Rad</title>
             <slug>Q2</slug>
             <path>outcomes/Q2</path>
             <description>Simplify odd roots of negative numbers.</description>
         </outcome>
         <outcome>
-            <title>Simplify Exp #3</title>
+            <title>Simplify Exp</title>
             <slug>Q3</slug>
             <path>outcomes/Q3</path>
             <description>Simplify rational expressions with negative and zero exponents.</description>
         </outcome>
         <outcome>
-            <title>Subtract Poly #4</title>
+            <title>Subtract Poly</title>
             <slug>Q4</slug>
             <path>outcomes/Q4</path>
             <description>Subtract quadratic polynomials.</description>
         </outcome>
         <outcome>
-            <title>Mult Poly #5</title>
+            <title>Mult Poly</title>
             <slug>Q5</slug>
             <path>outcomes/Q5</path>
             <description>Multiply a binomial by a trinomial (Difference of Cubes).</description>
         </outcome>
         <outcome>
-            <title>Poly Long Div #6</title>
+            <title>Poly Long Div</title>
             <slug>Q6</slug>
             <path>outcomes/Q6</path>
             <description>Perform polynomial long division with a remainder.</description>
         </outcome>
         <outcome>
-            <title>Solve Lin Eq #7</title>
+            <title>Solve Lin Eq</title>
             <slug>Q7</slug>
             <path>outcomes/Q7</path>
             <description>Solve multi-step linear equations involving distribution.</description>
         </outcome>
         <outcome>
-            <title>Solve Lin Eq w Frac #8</title>
+            <title>Solve Lin Eq w Frac</title>
             <slug>Q8</slug>
             <path>outcomes/Q8</path>
             <description>Solve linear equations involving fractions by clearing denominators.</description>
         </outcome>
         <outcome>
-            <title>Literal Eq #9</title>
+            <title>Literal Eq</title>
             <slug>Q9</slug>
             <path>outcomes/Q9</path>
             <description>Solve a literal equation for a specified variable.</description>
         </outcome>
         <outcome>
-            <title>Linear App #10</title>
+            <title>Linear App</title>
             <slug>Q10</slug>
             <path>outcomes/Q10</path>
             <description>Solve a word problem involving a linear rate (fixed cost + variable cost).</description>
         </outcome>
         <outcome>
-            <title>Graph Line #11</title>
+            <title>Graph Line</title>
             <slug>Q11</slug>
             <path>outcomes/Q11</path>
             <description>Graph a linear function and identify intercepts.</description>
+        </outcome>
+        <outcome>
+            <title>Eval Func</title>
+            <slug>Q12</slug>
+            <path>outcomes/Q12</path>
+            <description>Evaluate a function at specific points and simplify the results.</description>
+        </outcome>
+        <outcome>
+            <title>Domain, Range, and Functions</title>
+            <slug>Q13</slug>
+            <path>outcomes/Q13</path>
+            <description>Identify domain, range, and function status from graphs.</description>
         </outcome>
     </outcomes>
 </bank>

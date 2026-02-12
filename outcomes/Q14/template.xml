@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Given the graph of the function <m>f</m> below, find each of the following.
+        </p>
+        <p>
+            {{tikz}}
+        </p>
+    </intro>
+    <content>
+        <list>
+            <item><p>(a) <m>{{qa_expr}}</m></p></item>
+            <item><p>(b) <m>{{qb_expr}}</m></p></item>
+            <item><p>(c) <m>{{qc_expr}}</m></p></item>
+            <item><p>(d) Find <m>x</m> where <m>f(x) = {{target_y}}</m></p></item>
+        </list>
+    </content>
+    <outtro>
+        <p>Solution</p>
+        <list>
+            <item><p>(a) <m>{{ans_a}}</m></p></item>
+            <item><p>(b) <m>{{ans_b}}</m></p></item>
+            <item><p>(c) <m>{{ans_c}}</m></p></item>
+            <item><p>(d) <m>x = {{ans_d}}</m></p></item>
+        </list>
+    </outtro>
+</knowl>
