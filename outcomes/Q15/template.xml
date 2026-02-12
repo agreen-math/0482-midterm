@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Find the equation of the line parallel to <m>{{given_eqn}}</m> and passing through <m>{{point}}</m>.
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>Solution</p>
+        
+        <p>Slope:</p>
+        <p>
+            <m>{{given_eqn}}</m>
+        </p>
+        <p>
+            <m>{{step1_line1}}</m>
+        </p>
+        <p>
+            <m>{{step1_line2}}</m>
+        </p>
+        <p>
+            <m>m = {{m}}</m>
+        </p>
+        
+        <p>Y-intercept:</p>
+        <p>
+            <m>y = mx + b</m>
+        </p>
+        <p>
+            <m>{{step2_line1}}</m>
+        </p>
+        <p>
+            <m>{{step2_line2}}</m>
+        </p>
+        <p>
+            <m>{{step2_line3}}</m>
+        </p>
+        
+        <p>
+            <m>\boxed{ {{final_eqn}} }</m>
+        </p>
+    </outtro>
+</knowl>

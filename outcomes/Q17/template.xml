@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Solve the system of equations.
+        </p>
+        <p>
+            <m>{{system_latex}}</m>
+        </p>
+    </intro>
+    <content>
+    </content>
+    <outtro>
+        <p>Solution</p>
+        <p>
+            <m>{{isol_x_initial}} \to {{isol_x_disp}}</m>
+        </p>
+        
+        <p>Substitute:</p>
+        <p>
+            <m>{{sub_step}}</m>
+        </p>
+        <p>
+            <m>{{combine_step}}</m>
+        </p>
+        <p>
+            <m>{{isolate_y_step}}</m>
+        </p>
+        <p>
+            <m>{{y_ans_step}}</m>
+        </p>
+        
+        <p>Back-substitute:</p>
+        <p>
+            <m>{{back_sub}}</m>
+        </p>
+        <p>
+            <m>{{x_ans_step}}</m>
+        </p>
+        
+        <p>
+            <m>\boxed{ {{solution_pair}} }</m>
+        </p>
+    </outtro>
+</knowl>

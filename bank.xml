@@ -82,5 +82,29 @@
             <path>outcomes/Q13</path>
             <description>Identify domain, range, and function status from graphs.</description>
         </outcome>
+        <outcome>
+            <title>Read Graph</title>
+            <slug>Q14</slug>
+            <path>outcomes/Q14</path>
+            <description>Read information from a graph of a function.</description>
+        </outcome>
+        <outcome>
+            <title>Parallel Lines</title>
+            <slug>Q15</slug>
+            <path>outcomes/Q15</path>
+            <description>Find the equation of a line parallel to a given line through a point.</description>
+        </outcome>
+        <outcome>
+            <title>Lin App</title>
+            <slug>Q16</slug>
+            <path>outcomes/Q16</path>
+            <description>Solve for an input variable given an output value in a linear model.</description>
+        </outcome>
+        <outcome>
+            <title>Sys of Eq (Substitution)</title>
+            <slug>Q17</slug>
+            <path>outcomes/Q17</path>
+            <description>Solve a linear system x-y=a, x+y=b using substitution.</description>
+        </outcome>
     </outcomes>
 </bank>

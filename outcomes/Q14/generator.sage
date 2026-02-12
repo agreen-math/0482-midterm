@@ -27,9 +27,13 @@ class Generator(BaseGenerator):
             if 0 not in valid_x:
                 continue
                 
-            # Constraint: Need at least 4 valid points to make a good question
-            # (1 for f(0), 2 random others, and at least 1 for the inverse question)
-            if len(valid_x) < 4:
+            # Constraint: Need at least 3 valid points (0 + 2 others)
+            if len(valid_x) < 3:
+                continue
+            
+            # Make sure we have enough distinct non-zero points to sample from
+            pool = [x for x in valid_x if x != 0]
+            if len(pool) < 2:
                 continue
                 
             break
@@ -39,9 +43,7 @@ class Generator(BaseGenerator):
         # Mandatory: f(0)
         selected_x = [0]
         
-        # Pick 2 other distinct x-values from valid_x
-        # Create a pool excluding 0
-        pool = [x for x in valid_x if x != 0]
+        # Pick 2 other distinct x-values from valid_x excluding 0
         selected_x.extend(sample(pool, 2))
         
         # Shuffle these 3 to assign to (a), (b), (c) randomly
@@ -49,39 +51,14 @@ class Generator(BaseGenerator):
         x_a, x_b, x_c = selected_x[0], selected_x[1], selected_x[2]
         
         # Part (d): Inverse question f(x) = y
-        # Try to find a symmetric pair in valid_x that wasn't just used (if possible)
-        # to avoid trivial "I just calculated that" answers, though overlap is okay.
-        
-        target_y = None
-        ans_d_list = []
-        found_pair = False
-        
-        # Prefer pairs that don't overlap with x_a, x_b, x_c, but it's not strictly required.
-        remaining_pool = [x for x in valid_x] 
-        shuffle(remaining_pool)
-        
-        for vx in remaining_pool:
-            if vx == h: continue # Skip vertex usually
-            
-            sym_x = 2*h - vx
-            # Check if symmetric point is valid
-            if sym_x in valid_x:
-                y_val = int(round(f(vx)))
-                target_y = y_val
-                ans_d_list = sorted([vx, sym_x])
-                found_pair = True
-                break
-        
-        if not found_pair:
-            # Fallback to vertex
-            target_y = k
-            ans_d_list = [h]
+        # Always use the vertex y-coordinate so there is only one x answer.
+        target_y = k
+        ans_d = f"{h}"
             
         # Answers
         ans_a = int(round(f(x_a)))
         ans_b = int(round(f(x_b)))
         ans_c = int(round(f(x_c)))
-        ans_d = ", ".join([str(x) for x in ans_d_list])
         
         # 4. TikZ Graph Construction
         
@@ -94,11 +71,11 @@ class Generator(BaseGenerator):
             t_min = max(-10.0, h - dist)
             t_max = min(10.0, h + dist)
             
-        # Generate TikZ (No colored dots, just curve and grid)
-        # Removed the % comments to prevent formatting errors
+        # Generate TikZ
+        # UPDATED: step=1cm for grid lines at every integer
         tikz = r"""
 \begin{tikzpicture}[scale=0.35]
-    \draw[step=2cm, gray!40, very thin] (-10,-10) grid (10,10);
+    \draw[step=1cm, gray!40, very thin] (-10,-10) grid (10,10);
     \draw[thick, <->] (-10.5,0) -- (10.5,0) node[right] {$x$};
     \draw[thick, <->] (0,-10.5) -- (0,10.5) node[above] {$y$};
     
