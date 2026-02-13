@@ -39,7 +39,7 @@ class Generator(BaseGenerator):
         def get_tikz(plot_cmd, t_min, t_max):
             return r"""
 \begin{tikzpicture}[scale=0.35]
-    \draw[step=2cm, gray!40, very thin] (-10,-10) grid (10,10);
+    \draw[step=1cm, gray!40, very thin] (-10,-10) grid (10,10);
     \draw[thick, <->] (-10.5,0) -- (10.5,0) node[right] {$x$};
     \draw[thick, <->] (0,-10.5) -- (0,10.5) node[above] {$y$};
     

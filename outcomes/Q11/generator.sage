@@ -4,43 +4,42 @@ from random import randint, choice
 class Generator(BaseGenerator):
     def data(self):
         # Goal: Intercepts must be integers within [-10, 10].
-        # Strategy: Pick the intercepts, then find the slope.
+        # Constraint: Slope must be a fraction (denominator != 1).
         
-        # 1. Pick Intercepts (avoid 0 to ensure distinct non-origin intercepts)
-        # Keep range inside -9 to 9 so they aren't on the very edge
-        x_int = randint(-9, 9)
-        while x_int == 0: x_int = randint(-9, 9)
+        while True:
+            # 1. Pick Intercepts
+            # Keep range inside -9 to 9 so they aren't on the very edge
+            x_int = randint(-9, 9)
+            if x_int == 0: continue
+            
+            y_int = randint(-9, 9)
+            if y_int == 0: continue
+            
+            # 2. Check Slope
+            # Slope m = -y_int / x_int
+            # We want to ensure m is NOT an integer.
+            if y_int % x_int == 0:
+                continue
+                
+            # If we get here, the slope is a fraction.
+            break
         
-        y_int = randint(-9, 9)
-        while y_int == 0: y_int = randint(-9, 9)
-        
-        # 2. Calculate Slope and Equation
-        # Slope m = (y2 - y1) / (x2 - x1) = (0 - y_int) / (x_int - 0) = -y_int / x_int
         m_val = Rational(-y_int) / Rational(x_int)
         
-        # Equation string: f(x) = mx + b
-        # Helper to format slope nicely
-        if m_val == 1:
-            m_str = ""
-        elif m_val == -1:
-            m_str = "-"
-        else:
-            # UPDATED: Check for fraction and add displaystyle
-            if m_val.denominator() != 1:
-                m_str = r"\displaystyle " + latex(m_val)
-            else:
-                m_str = latex(m_val)
+        # Format slope with displaystyle braces as requested
+        # Since we guaranteed it's a fraction, we always apply this format.
+        m_str = r"\displaystyle{" + latex(m_val) + "}"
             
-        # y-intercept is b (since x=0)
+        # y-intercept is b
         b_val = y_int
+        
+        # Build Equation String
         if b_val > 0:
             eqn = f"{m_str}x + {b_val}"
         else:
             eqn = f"{m_str}x - {abs(b_val)}"
             
         # 3. TikZ Generation
-        # We generate the code string here to ensure the plotting logic matches the math
-        
         def get_tikz(show_sol=False):
             # Scale 0.4 fits well on a page
             tikz = [r"\begin{tikzpicture}[scale=0.4]"]
@@ -52,12 +51,9 @@ class Generator(BaseGenerator):
             
             if show_sol:
                 # Plot the line
-                # We use \clip to make sure the arrows don't go crazy outside the box
                 tikz.append(r"\begin{scope}")
                 tikz.append(r"\clip (-10,-10) rectangle (10,10);")
-                # Domain -11:11 to ensure it crosses the borders
-                # Syntax: \draw plot (\x, m*\x + b)
-                # Note: TikZ handles fractions like -5/2 usually okay, but decimals are safer.
+                
                 m_float = float(m_val)
                 b_float = float(b_val)
                 tikz.append(rf"\draw[<->, ultra thick, blue, domain=-11:11, samples=2] plot (\x, {{{m_float}*\x + {b_float}}});")
