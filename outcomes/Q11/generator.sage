@@ -25,7 +25,11 @@ class Generator(BaseGenerator):
         elif m_val == -1:
             m_str = "-"
         else:
-            m_str = latex(m_val)
+            # UPDATED: Check for fraction and add displaystyle
+            if m_val.denominator() != 1:
+                m_str = r"\displaystyle " + latex(m_val)
+            else:
+                m_str = latex(m_val)
             
         # y-intercept is b (since x=0)
         b_val = y_int
