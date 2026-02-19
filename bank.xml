@@ -2,7 +2,7 @@
 <bank xmlns="https://checkit.clontz.org" version="0.2">
     <title>0482 Midterm</title>
     <slug>0482-midterm</slug>
-    <url>idk yet</url>
+    <url>https://github.com/agreen-math/0482-midterm</url>
     <outcomes>
         <outcome>
             <title>Simplify Abs Val</title>
