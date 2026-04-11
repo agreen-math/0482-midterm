@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Solve the polynomial equation by factoring.</p>
+        <p>
+            <me>{{equation_latex}}</me>
+        </p>
+    </intro>
+    <outtro>
+        <p><strong>Solution:</strong></p>
+        <p>
+            <me>{{factor_table}}</me>
+        </p>
+        <p>
+            <me>{{ans_latex}}</me>
+        </p>
+        <p>
+            Final Solutions: <me>{{solutions_latex}}</me>
+        </p>
+    </outtro>
+</knowl>

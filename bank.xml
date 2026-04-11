@@ -1,110 +1,230 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-    <title>MC 0482 Midterm Bank SP26</title>
-    <slug>0482-midterm</slug>
-    <url>https://github.com/agreen-math/0482-midterm</url>
+    <title>MC 0482 Exam Bank SP26</title>
+    <slug>0482-exam</slug>
+    <url>https://github.com/agreen-math/0482-exam</url>
     <outcomes>
         <outcome>
             <title>Simplify Abs Val</title>
-            <slug>Q1</slug>
-            <path>outcomes/Q1</path>
+            <slug>M1</slug>
+            <path>outcomes/M1</path>
             <description>Simplify arithmetic expressions with absolute value and exponents.</description>
         </outcome>
         <outcome>
             <title>Simplify Rad</title>
-            <slug>Q2</slug>
-            <path>outcomes/Q2</path>
+            <slug>M2</slug>
+            <path>outcomes/M2</path>
             <description>Simplify odd roots of negative numbers.</description>
         </outcome>
         <outcome>
             <title>Simplify Exp</title>
-            <slug>Q3</slug>
-            <path>outcomes/Q3</path>
+            <slug>M3</slug>
+            <path>outcomes/M3</path>
             <description>Simplify rational expressions with negative and zero exponents.</description>
         </outcome>
         <outcome>
             <title>Subtract Poly</title>
-            <slug>Q4</slug>
-            <path>outcomes/Q4</path>
+            <slug>M4</slug>
+            <path>outcomes/M4</path>
             <description>Subtract quadratic polynomials.</description>
         </outcome>
         <outcome>
             <title>Mult Poly</title>
-            <slug>Q5</slug>
-            <path>outcomes/Q5</path>
+            <slug>M5</slug>
+            <path>outcomes/M5</path>
             <description>Multiply a binomial by a trinomial (Difference of Cubes).</description>
         </outcome>
         <outcome>
             <title>Poly Long Div</title>
-            <slug>Q6</slug>
-            <path>outcomes/Q6</path>
+            <slug>M6</slug>
+            <path>outcomes/M6</path>
             <description>Perform polynomial long division with a remainder.</description>
         </outcome>
         <outcome>
             <title>Solve Lin Eq</title>
-            <slug>Q7</slug>
-            <path>outcomes/Q7</path>
+            <slug>M7</slug>
+            <path>outcomes/M7</path>
             <description>Solve multi-step linear equations involving distribution.</description>
         </outcome>
         <outcome>
             <title>Solve Lin Eq w Frac</title>
-            <slug>Q8</slug>
-            <path>outcomes/Q8</path>
+            <slug>M8</slug>
+            <path>outcomes/M8</path>
             <description>Solve linear equations involving fractions by clearing denominators.</description>
         </outcome>
         <outcome>
             <title>Literal Eq</title>
-            <slug>Q9</slug>
-            <path>outcomes/Q9</path>
+            <slug>M9</slug>
+            <path>outcomes/M9</path>
             <description>Solve a literal equation for a specified variable.</description>
         </outcome>
         <outcome>
             <title>Linear App</title>
-            <slug>Q10</slug>
-            <path>outcomes/Q10</path>
+            <slug>M10</slug>
+            <path>outcomes/M10</path>
             <description>Solve a word problem involving a linear rate (fixed cost + variable cost).</description>
         </outcome>
         <outcome>
             <title>Graph Line</title>
-            <slug>Q11</slug>
-            <path>outcomes/Q11</path>
+            <slug>M11</slug>
+            <path>outcomes/M11</path>
             <description>Graph a linear function and identify intercepts.</description>
         </outcome>
         <outcome>
             <title>Eval Func</title>
-            <slug>Q12</slug>
-            <path>outcomes/Q12</path>
+            <slug>M12</slug>
+            <path>outcomes/M12</path>
             <description>Evaluate a function at specific points and simplify the results.</description>
         </outcome>
         <outcome>
             <title>Domain, Range, and Functions</title>
-            <slug>Q13</slug>
-            <path>outcomes/Q13</path>
+            <slug>M13</slug>
+            <path>outcomes/M13</path>
             <description>Identify domain, range, and function status from graphs.</description>
         </outcome>
         <outcome>
             <title>Read Graph</title>
-            <slug>Q14</slug>
-            <path>outcomes/Q14</path>
+            <slug>M14</slug>
+            <path>outcomes/M14</path>
             <description>Read information from a graph of a function.</description>
         </outcome>
         <outcome>
             <title>Parallel Lines</title>
-            <slug>Q15</slug>
-            <path>outcomes/Q15</path>
+            <slug>M15</slug>
+            <path>outcomes/M15</path>
             <description>Find the equation of a line parallel to a given line through a point.</description>
         </outcome>
         <outcome>
             <title>Lin App</title>
-            <slug>Q16</slug>
-            <path>outcomes/Q16</path>
+            <slug>M16</slug>
+            <path>outcomes/M16</path>
             <description>Solve for an input variable given an output value in a linear model.</description>
         </outcome>
         <outcome>
             <title>Sys of Eq (Substitution)</title>
-            <slug>Q17</slug>
-            <path>outcomes/Q17</path>
+            <slug>M17</slug>
+            <path>outcomes/M17</path>
             <description>Solve a linear system x-y=a, x+y=b using substitution.</description>
+        </outcome>
+        <outcome>
+            <title>Find GCF</title>
+            <slug>F1</slug>
+            <path>outcomes/F1</path>
+            <description>Find the greatest common factor.</description>
+        </outcome>
+        <outcome>
+            <title>Factor GCF</title>
+            <slug>F2</slug>
+            <path>outcomes/F2</path>
+            <description>Factor out the greatest common factor.</description>
+        </outcome>
+        <outcome>
+            <title>Factor Group</title>
+            <slug>F3</slug>
+            <path>outcomes/F3</path>
+            <description>Factor by grouping.</description>
+        </outcome>
+        <outcome>
+            <title>Factor DOS</title>
+            <slug>F4</slug>
+            <path>outcomes/F4</path>
+            <description>Factor a difference of squares.</description>
+        </outcome>
+        <outcome>
+            <title>Factor trinomial a=1</title>
+            <slug>F5</slug>
+            <path>outcomes/F5</path>
+            <description>Factor a trinomial with a leading coefficient of 1.</description>
+        </outcome>
+        <outcome>
+            <title>Factor trinomial a not 1</title>
+            <slug>F6</slug>
+            <path>outcomes/F6</path>
+            <description>Factor a trinomial with a leading coefficient not 1.</description>
+        </outcome>
+        <outcome>
+            <title>Solve trinomial a=1</title>
+            <slug>F7</slug>
+            <path>outcomes/F7</path>
+            <description>Solve a trinomial with a leading coefficient of 1.</description>
+        </outcome>
+        <outcome>
+            <title>Solve GCF DOS</title>
+            <slug>F8</slug>
+            <path>outcomes/F8</path>
+            <description>Solve a polynomial by factoring (GCF, DOS, etc.).</description>
+        </outcome>
+        <outcome>
+            <title>Write a polynomial</title>
+            <slug>F9</slug>
+            <path>outcomes/F9</path>
+            <description>Write a polynomial equation from its solutions.</description>
+        </outcome>
+        <outcome>
+            <title>Diff Quot</title>
+            <slug>F10</slug>
+            <path>outcomes/F10</path>
+            <description>Calculate the difference quotient for a function.</description>
+        </outcome>
+        <outcome>
+            <title>Solve Rational</title>
+            <slug>F11</slug>
+            <path>outcomes/F11</path>
+            <description>Solve a rational equation.</description>
+        </outcome>
+        <outcome>
+            <title>Simplify Radical</title>
+            <slug>F12</slug>
+            <path>outcomes/F12</path>
+            <description>Simplify a radical expression.</description>
+        </outcome>
+        <outcome>
+            <title>Add and Simplify Radical</title>
+            <slug>F13</slug>
+            <path>outcomes/F13</path>
+            <description>Add and simplify radical expressions.</description>
+        </outcome>
+        <outcome>
+            <title>Multiply and Simplify Radical</title>
+            <slug>F14</slug>
+            <path>outcomes/F14</path>
+            <description>Multiply and simplify radical expressions.</description>
+        </outcome>
+        <outcome>
+            <title>Neg Rational Exp</title>
+            <slug>F15</slug>
+            <path>outcomes/F15</path>
+            <description>Simplify expressions with a negative rational exponent.</description>
+        </outcome>
+        <outcome>
+            <title>Solve Radical 1</title>
+            <slug>F16</slug>
+            <path>outcomes/F16</path>
+            <description>Solve a radical equation with one radical.</description>
+        </outcome>
+        <outcome>
+            <title>Solve Radical 2</title>
+            <slug>F17</slug>
+            <path>outcomes/F17</path>
+            <description>Solve a radical equation with one radical.</description>
+        </outcome>
+        <outcome>
+            <title>Solve Quad w Sqrt Method</title>
+            <slug>F18</slug>
+            <path>outcomes/F18</path>
+            <description>Solve a quadratic equation using the square root method.</description>
+        </outcome>
+        <outcome>
+            <title>Solve Quad Factor Trap</title>
+            <slug>F19</slug>
+            <path>outcomes/F19</path>
+            <description>Solve a quadratic equation (factoring trap).</description>
+        </outcome>
+        <outcome>
+            <title>Solve Quad Formula Complex</title>
+            <slug>F20</slug>
+            <path>outcomes/F20</path>
+            <description>Solve a quadratic equation with the quadratic formula.</description>
         </outcome>
     </outcomes>
 </bank>

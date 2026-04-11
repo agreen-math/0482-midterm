@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Determine the GCF (Greatest Common Factor) of the following expressions:</p>
+        <p>
+            <me>{{term1}}, \quad {{term2}}, \quad \text{and} \quad {{term3}}</me>
+        </p>
+    </intro>
+    <outtro>
+        <p>Solution:</p>
+        <p>
+            <me>{{align_coeffs}}</me>
+        </p>
+        <p>
+            <me>{{align_vars}}</me>
+        </p>
+        <p>
+            Final GCF: <me>{{ans_latex}}</me>
+        </p>
+    </outtro>
+</knowl>

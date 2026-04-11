@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Factor the polynomial completely.</p>
+        <p>
+            <me>{{poly_latex}}</me>
+        </p>
+    </intro>
+    <outtro>
+        <p><strong>Solution:</strong></p>
+        <p>
+            <me>{{factor_table}}</me>
+        </p>
+        <p>
+            <me>{{align_solution}}</me>
+        </p>
+    </outtro>
+</knowl>
