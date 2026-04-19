@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-<!--0482 Exam Bank - ALL QUESTIONS-->
-    <title>MC 0482 Exam Bank SP26</title>
+<!--0482 Exam Bank - COMPREHENSIVE FINAL-->
+    <title>MC 0482 COMPREHENSIVE Final Exam Bank SP26</title>
     <slug>0482-exam</slug>
     <url>https://github.com/agreen-math/0482-exam</url>
     <outcomes>
@@ -30,40 +30,10 @@
             <description>Subtract quadratic polynomials.</description>
         </outcome>
         <outcome>
-            <title>Mult Poly</title>
-            <slug>M5</slug>
-            <path>outcomes/M5</path>
-            <description>Multiply a binomial by a trinomial (Difference of Cubes).</description>
-        </outcome>
-        <outcome>
-            <title>Poly Long Div</title>
-            <slug>M6</slug>
-            <path>outcomes/M6</path>
-            <description>Perform polynomial long division with a remainder.</description>
-        </outcome>
-        <outcome>
             <title>Solve Lin Eq</title>
             <slug>M7</slug>
             <path>outcomes/M7</path>
             <description>Solve multi-step linear equations involving distribution.</description>
-        </outcome>
-        <outcome>
-            <title>Solve Lin Eq w Frac</title>
-            <slug>M8</slug>
-            <path>outcomes/M8</path>
-            <description>Solve linear equations involving fractions by clearing denominators.</description>
-        </outcome>
-        <outcome>
-            <title>Literal Eq</title>
-            <slug>M9</slug>
-            <path>outcomes/M9</path>
-            <description>Solve a literal equation for a specified variable.</description>
-        </outcome>
-        <outcome>
-            <title>Linear App</title>
-            <slug>M10</slug>
-            <path>outcomes/M10</path>
-            <description>Solve a word problem involving a linear rate (fixed cost + variable cost).</description>
         </outcome>
         <outcome>
             <title>Graph Line</title>
@@ -72,22 +42,10 @@
             <description>Graph a linear function and identify intercepts.</description>
         </outcome>
         <outcome>
-            <title>Eval Func</title>
-            <slug>M12</slug>
-            <path>outcomes/M12</path>
-            <description>Evaluate a function at specific points and simplify the results.</description>
-        </outcome>
-        <outcome>
             <title>Domain, Range, and Functions</title>
             <slug>M13</slug>
             <path>outcomes/M13</path>
             <description>Identify domain, range, and function status from graphs.</description>
-        </outcome>
-        <outcome>
-            <title>Read Graph</title>
-            <slug>M14</slug>
-            <path>outcomes/M14</path>
-            <description>Read information from a graph of a function.</description>
         </outcome>
         <outcome>
             <title>Parallel Lines</title>
@@ -96,70 +54,16 @@
             <description>Find the equation of a line parallel to a given line through a point.</description>
         </outcome>
         <outcome>
-            <title>Lin App</title>
-            <slug>M16</slug>
-            <path>outcomes/M16</path>
-            <description>Solve for an input variable given an output value in a linear model.</description>
-        </outcome>
-        <outcome>
             <title>Sys of Eq (Substitution)</title>
             <slug>M17</slug>
             <path>outcomes/M17</path>
             <description>Solve a linear system x-y=a, x+y=b using substitution.</description>
         </outcome>
         <outcome>
-            <title>Find GCF</title>
-            <slug>F1</slug>
-            <path>outcomes/F1</path>
-            <description>Find the greatest common factor.</description>
-        </outcome>
-        <outcome>
-            <title>Factor GCF</title>
-            <slug>F2</slug>
-            <path>outcomes/F2</path>
-            <description>Factor out the greatest common factor.</description>
-        </outcome>
-        <outcome>
-            <title>Factor Group</title>
-            <slug>F3</slug>
-            <path>outcomes/F3</path>
-            <description>Factor by grouping.</description>
-        </outcome>
-        <outcome>
-            <title>Factor DOS</title>
-            <slug>F4</slug>
-            <path>outcomes/F4</path>
-            <description>Factor a difference of squares.</description>
-        </outcome>
-        <outcome>
-            <title>Factor trinomial a=1</title>
-            <slug>F5</slug>
-            <path>outcomes/F5</path>
-            <description>Factor a trinomial with a leading coefficient of 1.</description>
-        </outcome>
-        <outcome>
-            <title>Factor trinomial a not 1</title>
-            <slug>F6</slug>
-            <path>outcomes/F6</path>
-            <description>Factor a trinomial with a leading coefficient not 1.</description>
-        </outcome>
-        <outcome>
-            <title>Solve trinomial a=1</title>
-            <slug>F7</slug>
-            <path>outcomes/F7</path>
-            <description>Solve a trinomial with a leading coefficient of 1.</description>
-        </outcome>
-        <outcome>
             <title>Solve GCF DOS</title>
             <slug>F8</slug>
             <path>outcomes/F8</path>
             <description>Solve a polynomial by factoring (GCF, DOS, etc.).</description>
-        </outcome>
-        <outcome>
-            <title>Write a polynomial</title>
-            <slug>F9</slug>
-            <path>outcomes/F9</path>
-            <description>Write a polynomial equation from its solutions.</description>
         </outcome>
         <outcome>
             <title>Diff Quot</title>

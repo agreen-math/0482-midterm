@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-<!--0482 Exam Bank - ALL QUESTIONS-->
-    <title>MC 0482 Exam Bank SP26</title>
+<!--0482 Exam Bank - WEB FINAL-->
+    <title>MC 0482 Final Exam Bank SP26</title>
     <slug>0482-exam</slug>
     <url>https://github.com/agreen-math/0482-exam</url>
     <outcomes>
-        <outcome>
+<!--        <outcome>
             <title>Simplify Abs Val</title>
             <slug>M1</slug>
             <path>outcomes/M1</path>
@@ -107,6 +107,7 @@
             <path>outcomes/M17</path>
             <description>Solve a linear system x-y=a, x+y=b using substitution.</description>
         </outcome>
+-->
         <outcome>
             <title>Find GCF</title>
             <slug>F1</slug>

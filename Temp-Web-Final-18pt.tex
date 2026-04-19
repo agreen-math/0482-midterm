@@ -1,0 +1,396 @@
+\documentclass[addpoints,12pt,answers]{exam}
+\usepackage[top=1in, bottom=1in, left=.45in, right=.45in]{geometry}
+\usepackage{amsmath,amscd,amssymb,amsthm,fontsize}
+\usepackage{setspace,graphicx, enumerate}
+\usepackage{multirow}
+\usepackage{pgf,pgfplots,pgfkeys}
+\usepackage{tikz, comment, twoopt}
+\usepackage{multicol}
+
+\usetikzlibrary{arrows}
+\setlength{\unitlength}{1in}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Font & Size Adjustments
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage{arev}
+\renewcommand\bfdefault{bx}
+\renewcommand{\familydefault}{\sfdefault}
+
+\changefontsize{18pt}
+
+\usepackage[most]{tcolorbox}
+
+%Also need to change Standard Response Questions box and Congratulations box!
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Definitions of things
+%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ds}{\displaystyle}
+
+\newenvironment{ansb}[2]
+			{\begin{flushright}
+			\begin{tikzpicture}
+			\draw[fill=black] (.1,-.1) rectangle ({#1+.1},{#2-.1});
+			\draw[fill=white] (0,0) rectangle (#1,#2);
+			\draw (.8,{#2+.2}) node {\textbf{Answer:}};}
+			{\end{tikzpicture}\end{flushright}}
+\newenvironment{soln}
+      {\let\oldqedsymbol=\qedsymbol
+      \renewcommand{\qedsymbol}{$ $}
+      \begin{proof}[\bfseries\upshape \color{blue}Solution]\color{blue}}
+      {\end{proof}
+      \renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+
+%===========================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change for each exam
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\course}{MATH 0482 (Rev. SP26)}
+%\newcommand{\edate}{December 4th, 2023}
+\newcommand{\edate}{Initials: \hspace{.35in}}
+\newcommand{\exam}{Final Exam}
+\newcommand{\exammin}{\textbf{2 hours}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%CHANGE FOR SOLUTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noprintanswers
+%\printanswers
+%===========================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Header and footer info - No need to change
+%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+\firstpageheadrule
+\runningheadrule
+\firstpageheader{\course}{
+\ifprintanswers
+Solutions to
+\fi
+\exam}{\edate}
+\runningheader{\course}{
+\ifprintanswers
+Solutions to
+\fi
+\exam}{\edate}
+\firstpagefooter{$\star$}{}{Page \thepage\ of \numpages}
+\runningfooter{}{}{Page \thepage\ of \numpages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Extra code that the exam environment will except
+%%%%%%%%%%%%%%%%%%%%%%%
+%\ifprintanswers
+%Stuff to appear only when answers are being printed.
+%\else
+%Stuff to appear only when answers are not being printed.
+%\fi
+
+%\numquestions
+%\numparts
+%\numsubparts
+%\numsubsubparts
+%\numpoints
+%\numbonuspoints
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Changes color of fill in the blank answers.
+%%%%%%%%%%%%%%%%%%%%%%%
+\ifprintanswers 
+	\newcommand{\sd}[1]{\textcolor{blue}{#1}}
+\else 
+	\newcommand{\sd}[1]{\textcolor{white}{#1}}
+\fi
+	\newcommand{\und}[2][0in]{\underline{\sd{#2}}\underline{\phantom{#2} \hspace{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Exam settings (grade table, points, solutions)
+%%%%%%%%%%%%%%%%%%%%%%%
+\cellwidth{2em}
+\gradetablestretch{1.5}
+%\bracketedpoints
+%\boxedpoints
+\shadedsolutions
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+\renewcommand{\answerlinelength}{2in}
+
+\CorrectChoiceEmphasis{\Large\color{blue}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Exam cover page - no need to change, updates automatically
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\phantom{.}
+\vspace{.2cm}
+
+\noindent \textbf{Name}: 
+\rule{.5\textwidth}{.2mm} \hspace{1cm} \textbf{ID:}
+\hrulefill \\ 
+
+%\vspace{.5cm}
+
+%\noindent \textbf{Section}: \rule{.2\textwidth}{.2mm} \hspace{1cm}
+%\textbf{Recitation Instructor}: \hrulefill
+
+\vspace{.2cm}
+% \fontsize{12}{12}\selectfont{
+\textbf{INSTRUCTIONS}\\
+\phantom{.}\hspace{.7cm}
+\begin{minipage}{6.3in}
+	\begin{itemize}
+		%\setlength{\itemindent}{1cm}
+		\item Fill in your name, etc. on this first page. Write your initials on the top right of each page.
+		\item Without fully opening the exam, check that you have pages 1 through \totalnumpages.
+		\item {\bf Show all your work} on the standard response questions. Write your answers clearly!  Include enough steps for the grader to be able to follow your work. Include words to clarify your reasoning.
+		\item Do first all of the problems you know how to do immediately. Do not spend too much time on any particular problem. Return to difficult problems later.
+		\item If you have any questions please raise your hand and the instructor will come to you.
+		\item You will be given exactly \exammin \ for this exam.
+		%\item You may use a \textbf{SINGLE PAGE} (8.5'' by 11'') of \textbf{HANDWRITTEN} notes (front and back).
+		\item A SCIENTIFIC calculator may be used on the exam. \textbf{No graphing calculators are permitted on this exam}.
+	\end{itemize}
+\end{minipage}
+
+\vspace{.2cm}
+
+\newpage
+
+\textbf{ACADEMIC HONESTY}\\
+\phantom{.}\hspace{.7cm}
+\begin{minipage}{6.3in}
+	\begin{itemize}
+		
+		\item Do not open the exam booklet until you are instructed to do so.
+		\item Do not seek or obtain any kind of help from anyone to answer questions on this exam. If you have questions, consult only the instructor.
+		\item Books, notes, phones, or any other electronic devices are \textbf{not} allowed on the exam. Students should store them in their backpacks.
+		%\item No scratch paper is permitted. If you need more room use the back of a page. 
+		\item Anyone who violates these instructions will have committed an act of academic dishonesty.
+		Penalties for academic dishonesty can be very severe. All cases of academic dishonesty will be reported immediately to the Mathematics Department Chair and then the Dean of Math and Science.
+	\end{itemize}
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent I have read and understand the\\ above instructions and statements\\ regarding academic honesty:  \, \, \hrulefill\\
+\ {\color{white} .} \hspace{11 cm} \textbf{{\footnotesize SIGNATURE}}
+% }
+
+
+\vfill
+
+\newpage
+\phantom{.}
+\vfill
+\begin{center}
+   \textit{This page is intentionally left blank}.
+\end{center}
+\vfill
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% STANDARD RESPONSE BOX WITH INSTRUCTIONS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tcolorbox}[colback=gray!15,colframe=black]
+		{\textbf{Standard Response Questions}. Show all work to receive credit. Please \fbox{\textbf{BOX}} your final answer. }
+\end{tcolorbox}
+
+
+
+\vspace{-.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START WRITING STANDARD RESPONSE QUESTIONS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+\question[5] Determine the GCF (Greatest Common Factor) of the following expressions. \\ \\ $15a^7b^2c^5$, $30a^7b^3c$, and $45ab^4c^3$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Factor out the GCF from the polynomial completely.\\ \\ $15x^5-10x^4-5x^3$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Factor the polynomial by grouping.\\ \\ $2x^3+3x^2+2x+3$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Factor the polynomial completely. \\ \\ $x^2-64$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Factor the polynomial completely. \\ \\  $x^2-15x+54$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Factor the polynomial completely. \\ \\   $3x^2+20x-7$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Solve the polynomial equation by factoring.\\ \\ $x^2-15x+50=0$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Solve the polynomial equation by factoring.\\ \\ $\frac{1}{3}x^3-\frac{3}{4}x=0$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Find a polynomial equation with integer coefficients given the solutions: $2, \frac{1}{3}$.
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Given $f(x)=5x^2-x+4$, simplify $\dfrac{f(x+h)-f(x)}{h}$ when $h\neq 0$.
+\vspace*{\stretch{2}}\answerline
+
+\newpage
+
+\question[5] Solve the rational equation.\\ \\ $\dfrac{6x-5}{3x+2} = \dfrac{2x}{x+1}$
+\vspace*{\stretch{2}}\answerline
+
+\newpage
+
+\question[5] Simplify the radical expression completely. \\ \\ $5x\sqrt{121x^2y^4}$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\uplevel{\textbf{For Problems \ref{oper-start} through \ref{oper-end}, perform the operations and simplify.  Assume all variables are positive and rationalize the denominator when appropriate.}}
+
+\question[5]\label{oper-start} $\sqrt{150xy^2}-2\sqrt{18x^3}+y\sqrt{24x}+x\sqrt{128x}$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\uplevel{\textbf{For Problems \ref{oper-start} through \ref{oper-end}, perform the operations and simplify.  Assume all variables are positive and rationalize the denominator when appropriate.}}
+
+\question[5] $2\sqrt{2}(\sqrt{2}-3\sqrt{6})$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+\uplevel{\textbf{For Problems \ref{oper-start} through \ref{oper-end}, perform the operations and simplify.  Assume all variables are positive and rationalize the denominator when appropriate.}}
+
+
+\question[5]\label{oper-end} $(81x^4y^2)^{-\frac{1}{2}}$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Solve for all solutions. \\ \\ $\sqrt{x}-5=1$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Solve for all solutions. \\ \\ $\sqrt{4-3x}+2=x$
+\vspace*{\stretch{2.5}}\answerline
+
+\newpage
+
+\question[5] Solve for all solutions. \\ \\ $2x^2-5=0$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Solve for all solutions. \\ \\ $(x-4)(x-2)=6$
+\vspace*{\stretch{1}}\answerline
+
+\newpage
+
+\question[5] Solve using the quadratic formula.\\ \\ $x^2+x+1=0$
+\vspace*{\stretch{1}}\answerline
+
+\end{questions}
+
+\newpage
+
+\begin{tcolorbox}[colback=gray!15,colframe=black]
+{\Large \textbf{Congratulations} you are now done with the exam!}\\
+
+{Go back and check your solutions for accuracy and clarity.  Make sure your final answers are \fbox{BOXED}. }\\
+
+{When you are completely happy with your work please bring your exam to the front to be handed in. }
+\end{tcolorbox}
+
+
+\vspace{1.5cm}
+
+\vfill
+
+\bigskip
+\centerline{\textbf{DO NOT WRITE BELOW THIS LINE.}}
+\rule{\textwidth}{.2mm}
+
+\vfill
+
+\newpage
+
+\changefontsize{14pt}
+
+\begin{center}
+	\gradetable[v][pages]
+	
+	\vspace{12pt}
+	\textit{No more than \numpoints{} points may be earned on the exam.}
+	
+\end{center}
+
+\vfill
+
+\newpage
+\phantom{.}
+\vfill
+\begin{center}
+   \textit{This page is intentionally left blank}.
+\end{center}
+\vfill
+\newpage
+
+\newpage
+\phantom{.}
+\vfill
+\begin{center}
+   \textit{This page is intentionally left blank}.
+\end{center}
+\vfill
+\newpage
+
+\changefontsize{18pt}
+
+\begin{center}
+   {\Large \textbf{Useful Formulas}}
+\end{center}
+
+(\textit{You may tear this page out of the exam booklet for convenient referencing.})
+
+\begin{itemize}
+   \item The slope $m$ of a line given two points $(x_1,y_1)$ and $(x_2,y_2)$: 
+   \[m = \frac{y_2-y_1}{x_2-x_1}\]
+   \item The slope-intercept form of a line:
+   \[y=mx+b\]
+%   \item Some useful multiplication/factoring formulas:
+%   \[\begin{aligned}(a+b)^2 &= a^2+2ab+b^2\qquad\qquad (\text{perfect square of a sum})\\ (a-b)^2 &= a^2-2ab+b^2\qquad\qquad (\text{perfect square of a difference})\\ (a-b)(a+b) &= a^2-b^2\qquad\qquad\qquad\quad\!\! (\text{difference of squares})\end{aligned}\]
+   \item The quadratic formula:
+   \[x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+\end{itemize}
+
+\end{document} 
